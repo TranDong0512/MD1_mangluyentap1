@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let aray =[]
+    let nhap = prompt("nhập các phần tử vào mảng").split(",")
+    let x = nhap.length
+    for( let i=0; i < x; i++){
+        if( +nhap[i] >= 10){
+            aray.push(nhap[i])
+        }
+    }
+    console.log(aray)
+</script>
+</html>

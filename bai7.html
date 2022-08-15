@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let list = prompt("nhâp giá trị của mảng").split(",")
+    let V = prompt("nhập số cần tìm")
+    let index = -1
+    for (let i=0; i<list.length; i++) {
+        if (V === MNVBClist[i]) {
+            index = i;
+        }
+    }
+    if ( index !== -1){
+        list.splice(index,1)
+        console.log(list)
+
+    }else {
+        list.push(V)
+        console.log(list)
+    }
+
+</script>
+</body>
+</html>

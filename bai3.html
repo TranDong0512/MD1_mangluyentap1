@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let list = prompt("nhập phần tử vào mảng").split(",")
+    let x= list.length
+    let tong =0
+    let trungbinh =0
+    let max = +list[0]
+    for (let i=0;i<x;i++){
+        if( max < +list[i]){
+            max = +list[i]
+        }
+        tong=tong+ +list[i]
+        trungbinh=(tong/x)
+    }
+    document.write("số lớn nhất là " + max + "trung bình là" + trungbinh)
+</script>
+</html>

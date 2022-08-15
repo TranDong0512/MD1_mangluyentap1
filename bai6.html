@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let list = prompt("nhâp giá trị của mảng").split(",")
+    let V = prompt("nhập số cần tìm")
+    let index = -1
+    for (let i=0; i<list.length; i++) {
+        if (V === list[i]) {
+            index = i;
+        }
+    }
+    if ( index != -1){
+        console.log(V+"da co trong mang")
+
+    }else {
+        console.log(V +"chua co trong mang")
+    }
+
+</script>
+</html>
